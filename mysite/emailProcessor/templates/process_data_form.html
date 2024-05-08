@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Process Data</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/emailProcessor/handle_click/" method="post">
+        <input type="hidden" name="html_table" value="{{ html_table_encoded }}">
+        <button type="submit">Process Data</button>
+    </form>
+</body>
+</html>
